@@ -16,6 +16,10 @@ for filename in os.listdir(directory):
 	
 	#choose the creation time as a cutoff
 	if creation_time > creation_time_based_on_above_results:
+		#can add this if and then an else to delete certain files or add to other sub folders in the sub folder
+		#if '.txt' in file_path:
+			# Delete a single file
+			#os.remove(file_path)
 		#hardcoded destination path
 		destination = 'C:\\path\\to\\your\\Desktop\\desktop_files\\' + filename	
 		#move file
